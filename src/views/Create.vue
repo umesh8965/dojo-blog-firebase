@@ -23,6 +23,7 @@ nes (95 sloc) 1.94 KB
 <script>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
+import { projectFirestore, timestamp } from '../firebase/config'
 
 export default {
     setup(){
@@ -48,14 +49,11 @@ export default {
             const post = {
                 title: title.value,
                 body: body.value,
-                tags: tags.value
+                tags: tags.value,
+                createAt: timestamp()
             }
 
-            await fetch('http://localhost:3000/posts', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json'},
-                body: JSON.stringify(post)
-            })
+            const resp = projectFirestore.collection("posts").add(post)
 
             route.push({ name: "Home" })
         }
