@@ -1,0 +1,57 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "welcome to the new blog",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "tags": [
+        "webdev",
+        "coding",
+        "news"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "top 5 CSS tips",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "tags": [
+        "css",
+        "webdev",
+        "coding"
+      ]
+    },
+    {
+      "title": "Test",
+      "body": "teerrd",
+      "tags": [
+        "html",
+        "css",
+        "net",
+        "vue"
+      ],
+      "id": 3
+    },
+    {
+      "title": "This is test",
+      "body": "test content",
+      "tags": [
+        "vue",
+        "react",
+        "html"
+      ],
+      "id": 4
+    },
+    {
+      "title": "This is firebase blog",
+      "body": "Test conetent for firebase blog",
+      "tags": [
+        "HTML",
+        "CSS",
+        "Firebase",
+        "codeing",
+        "vue"
+      ],
+      "id": 5
+    }
+  ]
+}
